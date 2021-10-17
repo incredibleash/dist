@@ -1,0 +1,23 @@
+{
+  "name": "dist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incredibleash/dist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/incredibleash/dist/issues"
+  },
+  "homepage": "https://github.com/incredibleash/dist#readme",
+  "devDependencies": {
+    "jest": "^27.2.5"
+  }
+}

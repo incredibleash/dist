@@ -2,10 +2,13 @@ window.onload = function () {
   
   var seconds = 00; 
   var tens = 00; 
+  var sum1 = 0;
   var appendTens = document.getElementById("tens")
   var appendSeconds = document.getElementById("seconds")
   var buttonStart = document.getElementById('button-start');
+  var buttonsum = document.getElementById('sum');
   var buttonStop = document.getElementById('button-stop');
+  
   var buttonReset = document.getElementById('button-reset');
   var Interval ;
 
@@ -18,6 +21,13 @@ window.onload = function () {
     buttonStop.onclick = function() {
        clearInterval(Interval);
   }
+
+  buttonsum.onclick = function (){
+    let num1 = Number(document.getElementsByName("num1")[0].value);
+  let num2 = Number(document.getElementsByName("num2")[0].value);
+    calcSum(num1, num2);
+     
+  }
   
 
   buttonReset.onclick = function() {
@@ -27,6 +37,16 @@ window.onload = function () {
     appendTens.innerHTML = tens;
   	appendSeconds.innerHTML = seconds;
   }
+
+
+
+  function calcSum(num1, num2) 
+  {
+    window.alert((num1) + (num2));
+    return (num1 + num2);
+  }
+
+
   
    
   
@@ -58,3 +78,5 @@ window.onload = function () {
   
 
 }
+
+module.exports = calcSum
