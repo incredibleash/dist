@@ -9,7 +9,7 @@ ssh -i ~/.ssh/id_rsa ubuntu@172.31.92.27 <<EOF
     npm install
     npm install -g nodemon pm2
     pm2 restart ecosystem.config.js
-    sudo cp -a /home/ubuntu/dist/. /var/www/html/
+    sudo \cp -a /home/ubuntu/dist/. /var/www/html/
 
     exit
 EOF
